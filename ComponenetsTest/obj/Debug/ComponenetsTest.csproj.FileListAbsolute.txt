@@ -1,0 +1,9 @@
+D:\ComponenetsTest\ComponenetsTest\bin\Debug\ComponenetsTest.exe.config
+D:\ComponenetsTest\ComponenetsTest\bin\Debug\ComponenetsTest.exe
+D:\ComponenetsTest\ComponenetsTest\bin\Debug\ComponenetsTest.pdb
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.csprojAssemblyReference.cache
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.Form1.resources
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.Properties.Resources.resources
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.csproj.GenerateResource.cache
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.exe
+D:\ComponenetsTest\ComponenetsTest\obj\Debug\ComponenetsTest.pdb
