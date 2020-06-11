@@ -70,13 +70,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -534,7 +533,6 @@
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.textBox6);
             this.tabPage8.Controls.Add(this.label14);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
@@ -542,6 +540,16 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Результат";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(317, 118);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 20);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "label14";
             // 
             // panel1
             // 
@@ -580,7 +588,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Предыдущии вопрос";
+            this.button1.Text = "Предыдущий вопрос";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -591,23 +599,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(755, 318);
             this.panel2.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(412, 76);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "label14";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(111, 45);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(207, 198);
-            this.textBox6.TabIndex = 1;
             // 
             // Form1
             // 
@@ -698,7 +689,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox6;
     }
 }
 
