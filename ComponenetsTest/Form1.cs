@@ -21,7 +21,6 @@ namespace ComponenetsTest
             InitializeComponent();
             button2.Click += NextQuestion;
             button2.Click += QuestionChecking;
-            button2.Click += UpdateLabel;
 
             button1.Click += PreviousQuestion;
 
@@ -31,11 +30,6 @@ namespace ComponenetsTest
         private void UpdateTrackBarValue(object sender, EventArgs e)
         {
             label11.Text = $"Положение индикатора: {trackBar1.Value}";
-        }
-
-        private void UpdateLabel(object sender, EventArgs e)
-        {
-            label13.Text = answers.ToString();
         }
 
         private void NextQuestion(object sender, EventArgs e)
@@ -58,67 +52,67 @@ namespace ComponenetsTest
                 case 1:
                     if("Слово" == textBox1.Text)
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 2:
                     if (checkBox2.Checked && checkBox3.Checked)
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 3:
                     if (radioButton4.Checked)
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 4:
                     if (textBox2.Text == "Ответ для поля 1" &&
                         textBox3.Text == "Ответ для поля 2" &&
                         textBox4.Text == "Ответ для поля 3")
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 5:
                     if (comboBox1.SelectedIndex == 2)
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 6:
                     if ((int)trackBar1.Value == 5)
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
                     break;
                 case 7:
                     if (checkedListBox1.GetItemChecked(0) && checkedListBox1.GetItemChecked(3))
                     {
-                        answersResult[answers++] = true;
+                        WriteAnswersToArray(true, answers++);
                         rightAnswers++;
                     }
                     else
-                        answersResult[answers++] = false;
+                        WriteAnswersToArray(false, answers++);
 
 
                     label14.Text = $"Вы ответили правильно на {rightAnswers} вопросов из 7";
@@ -132,8 +126,7 @@ namespace ComponenetsTest
 
         private void WriteAnswersToArray(bool value, int questionNumber)
         {
-            //Метод который записывает ответы в массив да и сам массив должен быть не глобальным
-            //переделать и метод WriteAnswersToFile()
+            answersResult[questionNumber] = value;
         }
 
         private void WriteAnswersToFile()
